@@ -6,7 +6,7 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import modelforops.PetApplication;
-import modelforops.domain.PetDelete;
+import modelforops.domain.PetDeleted;
 import modelforops.domain.PetRegisterd;
 
 @Entity
@@ -33,8 +33,8 @@ public class Pet {
 
     @PostRemove
     public void onPostRemove() {
-        PetDelete petDelete = new PetDelete(this);
-        petDelete.publishAfterCommit();
+        PetDeleted petDeleted = new PetDeleted(this);
+        petDeleted.publishAfterCommit();
     }
 
     public static PetRepository repository() {
@@ -43,5 +43,13 @@ public class Pet {
         );
         return petRepository;
     }
+
+    //<<< Clean Arch / Port Method
+    public void deletepet() {
+        //implement business logic here:
+
+    }
+    //>>> Clean Arch / Port Method
+
 }
 //>>> DDD / Aggregate Root

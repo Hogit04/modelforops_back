@@ -9,15 +9,15 @@ import modelforops.infra.AbstractEvent;
 //<<< DDD / Domain Event
 @Data
 @ToString
-public class PetDelete extends AbstractEvent {
+public class PetDeleted extends AbstractEvent {
 
     private Long id;
 
-    public PetDelete(Pet aggregate) {
+    public PetDeleted(Pet aggregate) {
         super(aggregate);
     }
 
-    public PetDelete() {
+    public PetDeleted() {
         super();
     }
 }
