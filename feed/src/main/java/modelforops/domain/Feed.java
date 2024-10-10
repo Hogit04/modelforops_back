@@ -6,7 +6,7 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import modelforops.FeedApplication;
-import modelforops.domain.DeliveryStarted;
+import modelforops.domain.FeedRegistered;
 
 @Entity
 @Table(name = "Feed_table")
@@ -30,8 +30,8 @@ public class Feed {
 
     @PostPersist
     public void onPostPersist() {
-        DeliveryStarted deliveryStarted = new DeliveryStarted(this);
-        deliveryStarted.publishAfterCommit();
+        FeedRegistered feedRegistered = new FeedRegistered(this);
+        feedRegistered.publishAfterCommit();
     }
 
     public static FeedRepository repository() {

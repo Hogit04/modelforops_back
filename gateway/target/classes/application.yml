@@ -12,7 +12,7 @@ spring:
         - id: pet
           uri: http://localhost:8082
           predicates:
-            - Path=/pets/**, 
+            - Path=/pets/**, /pets/**, 
         - id: feed
           uri: http://localhost:8083
           predicates:
@@ -44,7 +44,7 @@ spring:
         - id: pet
           uri: http://pet:8080
           predicates:
-            - Path=/pets/**, 
+            - Path=/pets/**, /pets/**, 
         - id: feed
           uri: http://feed:8080
           predicates:

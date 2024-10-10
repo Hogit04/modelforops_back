@@ -45,6 +45,17 @@
                         Pet
                     </v-list-item>
 
+                    <v-list-item
+                        class="px-2"
+                        key="pets"
+                        to="/pets/pets"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        Pet
+                    </v-list-item>
+
 
                     <v-list-item
                         class="px-2"
@@ -136,6 +147,13 @@ export default {
         flipped: [],
         ImageUrl: '',
         aggregate: [
+            { 
+                title: 'Pet', 
+                description: '', 
+                key: 'pets', 
+                route: '/pets/pets',
+                ImageUrl: '',
+            },
             { 
                 title: 'Pet', 
                 description: '', 

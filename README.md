@@ -34,6 +34,7 @@ mvn spring-boot:run
 - pet
 ```
  http :8088/pets id="id" productName="productName" qty="qty" status="status" 
+ http :8088/pets id="id" productName="productName" qty="qty" status="status" 
 ```
 - feed
 ```
