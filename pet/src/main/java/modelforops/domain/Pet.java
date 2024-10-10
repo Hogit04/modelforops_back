@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import modelforops.PetApplication;
+import modelforops.domain.PetDelete;
 import modelforops.domain.PetRegisterd;
 
 @Entity
@@ -28,6 +29,12 @@ public class Pet {
     public void onPostPersist() {
         PetRegisterd petRegisterd = new PetRegisterd(this);
         petRegisterd.publishAfterCommit();
+    }
+
+    @PostRemove
+    public void onPostRemove() {
+        PetDelete petDelete = new PetDelete(this);
+        petDelete.publishAfterCommit();
     }
 
     public static PetRepository repository() {
