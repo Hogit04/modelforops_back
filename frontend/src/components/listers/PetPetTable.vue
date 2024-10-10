@@ -66,10 +66,11 @@
             values: [],
             headers: 
                 [
-                    { text: "id", value: "id" },
-                    { text: "productName", value: "productName" },
-                    { text: "qty", value: "qty" },
-                    { text: "status", value: "status" },
+                    { text: "reptileId", value: "reptileId" },
+                    { text: "userId", value: "userId" },
+                    { text: "speciesId", value: "speciesId" },
+                    { text: "name", value: "name" },
+                    { text: "birthDate", value: "birthDate" },
                 ],
             pet : [],
             newValue: {},
@@ -87,9 +88,11 @@
             this.values = temp.data._embedded.pets;
 
             this.newValue = {
-                'productName': '',
-                'qty': 0,
-                'status': '',
+                'reptileId': 0,
+                'userId': 0,
+                'speciesId': 0,
+                'name': '',
+                'birthDate': '2024-10-10',
             }
         },
         methods: {

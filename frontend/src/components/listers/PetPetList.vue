@@ -44,13 +44,15 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
-                            [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ ProductName :  {{data.productName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Qty :  {{data.qty }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ ReptileId :  {{data.reptileId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ SpeciesId :  {{data.speciesId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Name :  {{data.name }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ BirthDate :  {{data.birthDate }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -118,9 +120,11 @@
             this.values = temp.data._embedded.pets;
             
             this.newValue = {
-                'productName': '',
-                'qty': 0,
-                'status': '',
+                'reptileId': 0,
+                'userId': 0,
+                'speciesId': 0,
+                'name': '',
+                'birthDate': '2024-10-10',
             }
         },
         methods: {

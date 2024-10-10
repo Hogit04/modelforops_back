@@ -33,12 +33,12 @@ mvn spring-boot:run
 ## Test by API
 - pet
 ```
- http :8088/pets id="id" productName="productName" qty="qty" status="status" 
- http :8088/pets id="id" productName="productName" qty="qty" status="status" 
+ http :8088/pets reptileId="reptileId" userId="userId" speciesId="speciesId" name="name" birthDate="birthDate" 
+ http :8088/ 
 ```
 - feed
 ```
- http :8088/feeds id="id" productName="productName" qty="qty" orderId="orderId" address="address" status="status" 
+ http :8088/ 
 ```
 
 

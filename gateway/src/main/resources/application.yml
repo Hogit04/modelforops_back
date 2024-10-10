@@ -12,11 +12,11 @@ spring:
         - id: pet
           uri: http://localhost:8082
           predicates:
-            - Path=/pets/**, /pets/**, 
+            - Path=/pets/**, /undefined/**, 
         - id: feed
-          uri: http://localhost:8083
+          uri: http://localhost:0
           predicates:
-            - Path=/feeds/**, 
+            - Path=/undefined/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -44,11 +44,11 @@ spring:
         - id: pet
           uri: http://pet:8080
           predicates:
-            - Path=/pets/**, /pets/**, 
+            - Path=/pets/**, /undefined/**, 
         - id: feed
           uri: http://feed:8080
           predicates:
-            - Path=/feeds/**, 
+            - Path=/undefined/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

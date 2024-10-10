@@ -6,7 +6,6 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import modelforops.FeedApplication;
-import modelforops.domain.FeedRegistered;
 
 @Entity
 @Table(name = "Feed_table")
@@ -16,23 +15,13 @@ public class Feed {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long reptileId;
 
-    private String productName;
+    private Integer reptileId;
 
-    private Integer qty;
+    private Date feedDate;
 
-    private Long orderId;
-
-    private String address;
-
-    private String status;
-
-    @PostPersist
-    public void onPostPersist() {
-        FeedRegistered feedRegistered = new FeedRegistered(this);
-        feedRegistered.publishAfterCommit();
-    }
+    private Double qty;
 
     public static FeedRepository repository() {
         FeedRepository feedRepository = FeedApplication.applicationContext.getBean(

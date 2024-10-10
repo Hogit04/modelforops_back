@@ -15,13 +15,19 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                ProductName :  {{item.productName }}
+                                ReptileId :  {{item.reptileId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Qty :  {{item.qty }}
+                                UserId :  {{item.userId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Status :  {{item.status }}
+                                SpeciesId :  {{item.speciesId }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Name :  {{item.name }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                BirthDate :  {{item.birthDate }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 
@@ -73,7 +79,9 @@
                 var obj = {}
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
-                    obj['id'] = arr[4]; 
+                    obj['reptileId'] = arr[4]; 
+                    
+                    
                     
                     
                     

@@ -7,11 +7,11 @@ Vue.use(Router);
 
 import PetPetManager from "./components/listers/PetPetCards"
 import PetPetDetail from "./components/listers/PetPetDetail"
-import PetPetManager from "./components/listers/PetPetCards"
-import PetPetDetail from "./components/listers/PetPetDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
-import FeedFeedManager from "./components/listers/FeedFeedCards"
-import FeedFeedDetail from "./components/listers/FeedFeedDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
 
 export default new Router({
@@ -29,25 +29,25 @@ export default new Router({
                 component: PetPetDetail
             },
             {
-                path: '/pets/pets',
-                name: 'PetPetManager',
-                component: PetPetManager
+                path: '//',
+                name: 'Manager',
+                component: Manager
             },
             {
-                path: '/pets/pets/:id',
-                name: 'PetPetDetail',
-                component: PetPetDetail
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
             {
-                path: '/feeds/feeds',
-                name: 'FeedFeedManager',
-                component: FeedFeedManager
+                path: '//',
+                name: 'Manager',
+                component: Manager
             },
             {
-                path: '/feeds/feeds/:id',
-                name: 'FeedFeedDetail',
-                component: FeedFeedDetail
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
 

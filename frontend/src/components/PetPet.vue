@@ -16,9 +16,11 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
-            <String label="ProductName" v-model="value.productName" :editMode="editMode" :inputUI="''"/>
-            <Number label="Qty" v-model="value.qty" :editMode="editMode" :inputUI="''"/>
-            <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
+            <Number v-if="editMode" label="ReptileId" v-model="value.reptileId" :editMode="editMode" :inputUI="''"/>
+            <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
+            <Number label="SpeciesId" v-model="value.speciesId" :editMode="editMode" :inputUI="''"/>
+            <String label="Name" v-model="value.name" :editMode="editMode" :inputUI="''"/>
+            <Date label="BirthDate" v-model="value.birthDate" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

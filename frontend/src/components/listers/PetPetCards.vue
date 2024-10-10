@@ -104,9 +104,11 @@
             me.values = temp.data._embedded.pets;
             
             me.newValue = {
-                'productName': '',
-                'qty': 0,
-                'status': '',
+                'reptileId': 0,
+                'userId': 0,
+                'speciesId': 0,
+                'name': '',
+                'birthDate': '2024-10-10',
             }
         },
         methods:{

@@ -16,13 +16,15 @@ public class Pet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long reptileId;
 
-    private String productName;
+    private Integer userId;
 
-    private Integer qty;
+    private Integer speciesId;
 
-    private String status;
+    private String name;
+
+    private Date birthDate;
 
     @PostPersist
     public void onPostPersist() {

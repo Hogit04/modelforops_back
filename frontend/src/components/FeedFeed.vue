@@ -16,11 +16,10 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
-            <String label="ProductName" v-model="value.productName" :editMode="editMode" :inputUI="''"/>
+            <Number v-if="editMode" label="ReptileId" v-model="value.reptileId" :editMode="editMode" :inputUI="''"/>
+            <Number label="ReptileId" v-model="value.reptileId" :editMode="editMode" :inputUI="''"/>
+            <Date label="FeedDate" v-model="value.feedDate" :editMode="editMode" :inputUI="''"/>
             <Number label="Qty" v-model="value.qty" :editMode="editMode" :inputUI="''"/>
-            <Number label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
-            <String label="Address" v-model="value.address" :editMode="editMode" :inputUI="''"/>
-            <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

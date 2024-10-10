@@ -104,11 +104,10 @@
             me.values = temp.data._embedded.feeds;
             
             me.newValue = {
-                'productName': '',
+                'reptileId': 0,
+                'reptileId': 0,
+                'feedDate': '2024-10-10',
                 'qty': 0,
-                'orderId': 0,
-                'address': '',
-                'status': '',
             }
         },
         methods:{

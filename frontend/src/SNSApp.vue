@@ -47,25 +47,25 @@
 
                     <v-list-item
                         class="px-2"
-                        key="pets"
-                        to="/pets/pets"
+                        key=""
+                        to="//"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Pet
+                        
                     </v-list-item>
 
 
                     <v-list-item
                         class="px-2"
-                        key="feeds"
-                        to="/feeds/feeds"
+                        key=""
+                        to="//"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Feed
+                        
                     </v-list-item>
 
 
@@ -155,17 +155,17 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'Pet', 
+                title: '', 
                 description: '', 
-                key: 'pets', 
-                route: '/pets/pets',
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             { 
-                title: 'Feed', 
+                title: '', 
                 description: '', 
-                key: 'feeds', 
-                route: '/feeds/feeds',
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             
